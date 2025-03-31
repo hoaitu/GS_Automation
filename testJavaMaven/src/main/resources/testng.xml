@@ -1,0 +1,40 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Automation Suite">
+    <listeners>
+        <listener class-name="org.example.Report.ExtentListener"/>
+    </listeners>
+
+    <test name="Sample Test 999">
+        <classes>
+            <class name="ProductCreationTests.CreateIMEIProduct"/>
+        </classes>
+    </test>
+</suite>
+
+<!--<suite name="Automation Suite">-->
+
+<!--    <listeners>-->
+<!--        <listener class-name="org.example.Report.ExtentListener"/>-->
+<!--    </listeners>-->
+
+<!--    <test name="Sample Test 999">-->
+<!--        <classes>-->
+<!--            <class name="org.example.LoginPageTest"/>-->
+<!--&lt;!&ndash;            <class name="LoginPageTest"/>&ndash;&gt;-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--&lt;!&ndash;    <test name="Normal product Test">&ndash;&gt;-->
+<!--&lt;!&ndash;        <classes>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="ProductCreationTests.CreateNormalProductTest"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            &lt;!&ndash;            <class name="LoginPageTest"/>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        </classes>&ndash;&gt;-->
+<!--&lt;!&ndash;    </test>&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <test name="VAT Product Test">&ndash;&gt;-->
+<!--&lt;!&ndash;        <classes>&ndash;&gt;-->
+<!--&lt;!&ndash;            <class name="ProductCreationTests.CreateProductSetupVAT"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            &lt;!&ndash;            <class name="LoginPageTest"/>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        </classes>&ndash;&gt;-->
+<!--&lt;!&ndash;    </test>&ndash;&gt;-->
+<!--</suite>-->
