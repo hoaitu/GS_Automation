@@ -23,7 +23,6 @@ public class CreateProductSetupVAT extends BaseTest {
 
     @BeforeClass
     public void setupTest() {
-        //        super.setup();
         System.out.println("Parent class: " + this.getClass().getSuperclass().getName());
         if (ExtentListener.getClassTest() != null) {
             ExtentListener.getClassTest().log(Status.INFO, "Parent class: " + this.getClass().getSuperclass().getName());

@@ -20,7 +20,6 @@ import java.util.Map;
 
 @Listeners(org.example.Report.ExtentListener.class)
 public class CreateProductWithTwoVariantsTest extends BaseTest {
-
     String name;
     String pass;
     String productName;
@@ -44,7 +43,7 @@ public class CreateProductWithTwoVariantsTest extends BaseTest {
 
     @BeforeClass
     public void setupTest() {
-        //        super.setup();
+        
         loginPage = new LoginPage(driver);
         productPage = new ProductPage2(driver);
         driver.get("https://admin.gosell.vn/login.html#/");
