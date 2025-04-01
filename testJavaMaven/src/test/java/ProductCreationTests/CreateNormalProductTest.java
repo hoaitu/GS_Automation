@@ -53,7 +53,7 @@ public class CreateNormalProductTest extends BaseTest {
 
 @BeforeClass
 public void setupTest() {
-    super.setup();
+    //        super.setup();
     loginPage = new LoginPage(driver);
     productPage = new ProductPage2(driver);
     driver.get("https://admin.gosell.vn/login.html#/");

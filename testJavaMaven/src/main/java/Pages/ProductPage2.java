@@ -421,7 +421,7 @@ public class ProductPage2 {
             WebElement latestVariantValueElement = variantValueElements.get(variantValueElements.size() - 1);
             latestVariantValueElement.clear();
             //TODO clickElement1 xem lai
-            utility.clickElement1(latestVariantValueElement);
+            utility.clickElement(driver, latestVariantValueElement);
 
             for (int i = 0; i < variationValue.length; i++) {
                 latestVariantValueElement.sendKeys(variationValue[i]);
@@ -867,7 +867,6 @@ public class ProductPage2 {
 
             WebElement giaNiemYet = row.findElement(orgPrice);
             WebElement soLuong    = row.findElement(stock);
-            System.out.println("TEST XEM CLICK BANG CACH GI");
             utility.clickElement(driver, giaNiemYet);
             // Đợi popup hiển thị và tìm ô input trong popup
 //            WebElement popupOrgPriceInput = utility.waitForVisibility(driver, By.xpath("//div[contains(@class, 'modal-content')]//input[contains(@id, 'orgPrice')]"), 10);
@@ -1570,7 +1569,7 @@ public class ProductPage2 {
             throw new IllegalStateException("IMEI input for branch " + branchName + " is disabled");
         }
 
-        utility.clickElement1(input);
+        utility.clickElement(driver, input);
 
         utility.sendKeys(driver, 10, imei);
 
